@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="caesar.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="../index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Caesar Cipher</a>
+        <a class="nav-item nav-link" href="../Calc/calculator.html">Calculator</a> 
+        <a class="nav-item nav-link" href="../Etch/index.html">Etch-a-Sketch</a> 
+        <a class="nav-item nav-link" href="../RPS/index.html">Rock, Paper, Scissors</a>
+        <a class="nav-item nav-link" href="../map/index.html">Map</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h1 style="text-align: center; padding-top: 8%;">Caesar Cipher</h1>
+       </div>
+    </div>   
+    <hr>
+    <div class="row">
+      <div class="inputText five columns">
+        <p><u>Input text:</u></p> 
+            <textarea id="input" placeholder="Et tu, Brute?"></textarea>
+        </div>
+        <div class="shiftNumber two columns">
+          <p><u>Shift by:</u></p> 
+            <input type="number" id="shift" value="0" max="25" min="-25">
+        </div>
+        <div class="five columns">
+          <p><u>Coded message:</u></p> 
+            <p id="output"></p>
+        </div>
+      </div>
+      <br><br><hr><br><br>
+      <img class="center" src="imgCaesar.jpg">
+      <br><br>
+      <p><i>In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.</i></p>
+      
+      
+  </div>
+
+  
+          
+    <script src = "caesar.js"></script>
+</body>
+</html>
